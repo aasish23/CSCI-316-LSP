@@ -23,7 +23,10 @@
     )
 )
 
-;Q4 todo
+;Q4 
+(defun multiple-member (a b)
+    (and (or (integerp a) (not (consp a))) (consp b) (member a (cdr (member a b))))
+)
 
 
 ;Q5
